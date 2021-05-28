@@ -1,0 +1,83 @@
+
+#week2- KNN Classifier
+
+import numpy as np
+
+#STEP1: Update ClassN & SampleN here, for any new feature vectors we have to update/delete/append these rows first:
+
+class1 =1
+sample1 = np.array((0.15,0.35))
+
+class2 =2
+sample2 = np.array((0.15,0.28))
+
+class3 =2
+sample3 = np.array((0.12,0.2))
+
+class4 =3
+sample4 = np.array((0.1,0.32))
+
+class5 =3
+sample5 = np.array((0.06,0.25))
+#update or add or remove any more class_num, sample_num
+#classN =
+#sampleN = np.array(( , ))
+
+#STEP2: Update  new feature vector for which distance from above points has to be found, here:
+x1= np.array((0.1, 0.25))
+#xN= np.array(( , ))
+
+
+#STEP3: Make changes in these 2 or 3 lines as required:
+sample_number= sample1
+class_number=class1
+x= x1
+
+distance = np.linalg.norm((x- sample_number))
+print('sample is:',sample_number, 'class is',class_number)
+print('distance from',x, 'is:',distance)
+print('')
+
+#STEP4: Repeat: STEP3 for sample2, or for as many datapoints as required by updating only below 2 or 3 lines:
+sample_number= sample2
+class_number=class2
+x= x1
+
+distance = np.linalg.norm((x- sample_number))
+print('sample is:',sample_number, 'class is',class_number)
+print('distance from',x, 'is:',distance)
+print('')
+
+#Repeat: STEP3 for sample3
+sample_number= sample3
+class_number=class3
+x= x1
+
+distance = np.linalg.norm((x- sample_number))
+print('sample is:',sample_number, 'class is',class_number)
+print('distance from',x, 'is:',distance)
+print('')
+
+
+#Repeat: STEP3 for sample4
+sample_number= sample4
+class_number=class4
+x= x1
+
+distance = np.linalg.norm((x- sample_number))
+print('sample is:',sample_number, 'class is',class_number)
+print('distance from',x, 'is:',distance)
+print('')
+
+
+#Repeat: STEP3 for sample5
+sample_number= sample5
+class_number=class5
+x= x1
+
+distance = np.linalg.norm((x- sample_number))
+print('sample is:',sample_number, 'class is',class_number)
+print('distance from',x, 'is:',distance)
+print('')
+
+# looking at Outputs from above code, make decision about nearest Class for 1NN, 3NN or any K-NN Classifier.
